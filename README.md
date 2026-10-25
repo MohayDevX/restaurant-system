@@ -3,8 +3,7 @@
 A complete, offline-ready Restaurant Management System built with pure HTML, CSS, and JavaScript. No frameworks, no database required - all data is stored locally in the browser.
 
 ### 🚀 Live Demo
-[https://mahaydevx.github.io/restaurant-system/](https://github.com/MohayDevX)
-
+https://github.com/MohayDevX/restaurant-system
 ### How to Run
 Just open index.html in any modern browser. No need to install anything, no server, no setup.
 
