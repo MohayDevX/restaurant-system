@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8fa">
+  <title>مذاق | إدارة المطعم</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#dashboard" aria-label="مذاق - الرئيسية">
+        <span class="brand-mark">م</span>
+        <span><strong>مذاق</strong><small>إدارة مطعمك بذكاء</small></span>
+      </a>
+      <div class="branch-picker"><span class="branch-icon">⌂</span><span><small>الفرع الحالي</small><strong>الفرع الرئيسي</strong></span><span class="chevron">⌄</span></div>
+      <div class="nav-caption">القائمة الرئيسية</div>
+      <nav class="main-nav" aria-label="القائمة الرئيسية">
+        <a href="#dashboard" data-page="dashboard" class="nav-link active"><span class="nav-icon">▦</span>لوحة التحكم</a>
+        <a href="#orders" data-page="orders" class="nav-link"><span class="nav-icon">▤</span>الطلبات <span class="nav-badge" id="ordersBadge">0</span></a>
+        <a href="#cashier" data-page="cashier" class="nav-link"><span class="nav-icon">▣</span>الكاشير ونقطة البيع</a>
+        <a href="#menu" data-page="menu" class="nav-link"><span class="nav-icon">☷</span>المنيو</a>
+        <a href="#inventory" data-page="inventory" class="nav-link"><span class="nav-icon">▧</span>المخازن</a>
+        <a href="#finance" data-page="finance" class="nav-link"><span class="nav-icon">◷</span>الأرباح والخسائر</a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="help-card"><span class="help-spark">✦</span><strong>كل شيء تحت السيطرة</strong><p>تابع مخزونك ومبيعاتك لحظة بلحظة.</p><button data-action="help">اكتشف المزيد <span>←</span></button></div>
+        <button class="profile-button"><span class="avatar">م</span><span><strong>مدير المطعم</strong><small>المدير العام</small></span><span class="dots">···</span></button>
+      </div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar">
+        <div class="topbar-start"><button class="icon-button mobile-menu" id="mobileMenu" aria-label="فتح القائمة">☰</button><div class="breadcrumb">الرئيسية <span>/</span> <strong id="breadcrumbTitle">لوحة التحكم</strong></div></div>
+        <div class="topbar-actions">
+          <span class="date-label" id="todayLabel"></span>
+          <button class="icon-button notification-button" id="notificationButton" aria-label="تنبيهات المخزون">♧<i id="notificationDot"></i></button>
+          <button class="user-chip"><span class="avatar small-avatar">م</span><span>محمد أحمد</span><span class="chevron">⌄</span></button>
+        </div>
+      </header>
+      <section class="page-content" id="pageContent" aria-live="polite"></section>
+    </main>
+  </div>
+  <div class="toast-region" id="toastRegion" aria-live="polite"></div>
+  <dialog id="appDialog" class="app-dialog"></dialog>
+  <script src="app.js"></script>
+</body>
+</html>
