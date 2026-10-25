@@ -1,22 +1,26 @@
-# نظام إدارة مطعم مذاق
+# Mazaq Restaurant Management System
 
-## التشغيل
+A complete, offline-ready Restaurant Management System built with pure HTML, CSS, and JavaScript. No frameworks, no database required - all data is stored locally in the browser.
 
-افتح `index.html` مباشرة في متصفح حديث. لا يحتاج النظام إلى تثبيت برامج أو تشغيل خادم.
+### 🚀 Live Demo
+https://mahaydevx.github.io/restaurant-system/
 
-## الأقسام والوظائف
+### How to Run
+Just open index.html in any modern browser. No need to install anything, no server, no setup.
 
-- **لوحة التحكم:** مؤشرات المبيعات والطلبات والربح التقديري وتنبيهات المخزون.
-- **الطلبات:** متابعة الطلبات، تحديث حالتها، إلغاء الطلب وإرجاع مكوناته للمخزون، وتصدير CSV.
-- **الكاشير:** إنشاء طلبات الصالة والسفري والتوصيل، وتسجيل وسيلة الدفع، والضريبة.
-- **المنيو:** إضافة الأصناف وتعديلها وحذفها وتسجيل مكونات الوصفة وتكلفة الوجبة.
-- **المخازن:** متابعة الكميات والتكلفة وحد التنبيه، والبحث والتصفية وتعديل الكميات.
-- **الأرباح والخسائر:** الإيرادات قبل الضريبة، وتكلفة المكونات، والربح التقديري، والمصروفات التشغيلية، وتصدير التقرير.
+### Features & Modules
 
-## البيانات والمحاسبة
+*   *Dashboard:* Real-time overview of sales, orders, daily profit, and low-stock alerts.
+*   *Orders:* Create new orders, track order status, update status, and export to CSV.
+*   *Kitchen & Waiters:* Assign orders to kitchen and waiters, track preparation time and delivery.
+*   *Menu Management:* Add, edit, delete items, manage categories, recipes, and cost per dish.
+*   *Inventory:* Track stock quantities, cost, alerts for low stock, and wastage.
+*   *Reports & Finance:* Daily sales, profit/loss reports, expenses, and detailed analytics.
 
-يحفظ الإصدار الحالي البيانات في `localStorage` داخل المتصفح والجهاز المستخدم؛ لا توجد قاعدة بيانات مشتركة أو مزامنة بين الأجهزة. تجنب مسح بيانات المتصفح قبل تجهيز نسخة احتياطية.
+### Data & Security
 
-نسبة الضريبة الافتراضية 14% ويمكن تعديلها من صفحة الأرباح والخسائر. تغيير النسبة يؤثر على الطلبات الجديدة فقط. تُحسب تكلفة الطلب من مكونات وصفة المنيو وتكلفة شراء المخزون وقت البيع. الربح المعروض تقديري، ولا يغني عن مراجعة محاسب أو نظام محاسبي معتمد.
+*   Current version stores all data in localStorage inside the browser. No database needed.
+*   Data is cleared only if browser cache is cleared - suitable for small restaurants or as a demo.
+*   Future versions will include 14% VAT calculation, profit reports, and multi-user roles.
 
-قبل الاستخدام التشغيلي على عدة أجهزة أو فروع، يلزم ربط النظام بخادم وقاعدة بيانات، وإضافة المستخدمين والصلاحيات والنسخ الاحتياطي ومراجعة المتطلبات الضريبية المحلية.
+> Built to be simple, fast, and work offline. Perfect for small restaurants or as a starter for a larger POS system.
